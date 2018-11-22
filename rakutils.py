@@ -3,18 +3,14 @@
 def roundd(a):
    if a < 0:
      sign= -1
-     a = abs(a)
-     temp = a + 0.5
-     if temp > int(a) + 1.0:
-        return sign * int(temp)
-     else:
-        return sign* int(a)
    else:
-     temp = a + 0.5
-     if temp > int(a) + 1.0:
-        return int(temp)
-     else:
-        return int(a)
+     sign = 1
+   a = abs(a)
+   temp = a + 0.5
+   if temp > int(a) + 1.0:
+      return sign * int(temp)
+   else:
+      return sign* int(a)
 
 '''Sum of digits in a number
 '''
