@@ -48,3 +48,10 @@ def mediann(l):
       return (l[int(len(l)/2)])
    else:
       return (l[int(len(l)/2)] + l[int(len(l)/2)-1])/2
+
+
+
+''' Average of numbers in a list
+'''
+def avgg(l):
+    returb sum(l)/len(l)
